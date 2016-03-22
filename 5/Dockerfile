@@ -3,7 +3,7 @@ MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ## Version
 ENV NODEJS_MAJOR   5
-ENV NODEJS_VERSION 5.8.0-1nodesource1~trusty1
+ENV NODEJS_VERSION 5.9.0-1nodesource1~trusty1
 
 ## Repository
 RUN \
@@ -13,7 +13,7 @@ RUN \
 ## Packages
 RUN \
   apt-get update &&\
-  apt-get install -y nodejs=5.8.0-1nodesource1~trusty1 &&\
+  apt-get install -y nodejs=5.9.0-1nodesource1~trusty1 &&\
   rm -rf /var/lib/apt/lists/*
 
 # Install Bower & Grunt 
