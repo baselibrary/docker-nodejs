@@ -4,9 +4,10 @@
 
 ### Base Docker Image
 
-* `latest`: nodejs 5.6
-* `4`     : nodejs 4.3
-* `5`     : nodejs 5.6
+* `latest`: nodejs 6.0
+* `4`     : nodejs 4.4
+* `5`     : nodejs 5.11
+* `6`     : nodejs 6.0
 
 ### Installation
 
