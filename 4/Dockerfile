@@ -3,7 +3,7 @@ MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ## Version
 ENV NODEJS_MAJOR   4
-ENV NODEJS_VERSION 4.4.3-1nodesource1~trusty1
+ENV NODEJS_VERSION 4.4.4-1nodesource1~trusty1
 
 ## Repository
 RUN \
@@ -13,8 +13,12 @@ RUN \
 ## Packages
 RUN \
   apt-get update &&\
-  apt-get install -y nodejs=4.4.3-1nodesource1~trusty1 &&\
+  apt-get install -y ruby ruby-dev gem make nodejs=4.4.4-1nodesource1~trusty1 &&\
   rm -rf /var/lib/apt/lists/*
+
+# Install Compass
+RUN \
+  gem install compass
 
 # Install Bower & Grunt 
 RUN \

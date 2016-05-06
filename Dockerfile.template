@@ -13,8 +13,12 @@ RUN \
 ## Packages
 RUN \
   apt-get update &&\
-  apt-get install -y nodejs=%%NODEJS_VERSION%% &&\
+  apt-get install -y ruby ruby-dev gem make nodejs=%%NODEJS_VERSION%% &&\
   rm -rf /var/lib/apt/lists/*
+
+# Install Compass
+RUN \
+  gem install compass
 
 # Install Bower & Grunt 
 RUN \
