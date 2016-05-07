@@ -1,6 +1,6 @@
 NAME     = baselibrary/nodejs
 REPO     = git@github.com:baselibrary/docker-nodejs.git
-REGISTRY = thoughtworks.ga
+REGISTRY = thoughtworks.io
 VERSIONS = $(foreach df,$(wildcard */Dockerfile),$(df:%/Dockerfile=%))
 
 all: build 
